@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewGameFeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Game Feed"
+        android:textAlignment="center"
+        android:textColor="#25AE8E"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRock"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:onClick="rock"
+        android:text="Rock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGameFeed" />
+
+    <Button
+        android:id="@+id/btnScissors"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:onClick="scissors"
+        android:text="Scissors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPaper" />
+
+    <Button
+        android:id="@+id/btnPaper"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:onClick="paper"
+        android:text="Paper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRock" />
+
+    <TextView
+        android:id="@+id/textViewPlayer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:textAlignment="center"
+        android:textColor="#3455AC"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLizard" />
+
+    <TextView
+        android:id="@+id/textViewComputer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Computer"
+        android:textAlignment="center"
+        android:textColor="#30DB41"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayerInput" />
+
+    <TextView
+        android:id="@+id/textViewPlayerInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:textAlignment="center"
+        android:textColor="#C83455AC"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlayer" />
+
+    <TextView
+        android:id="@+id/textViewComputerInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Computer"
+        android:textAlignment="center"
+        android:textColor="#D130DB41"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComputer" />
+
+    <Button
+        android:id="@+id/btnNewGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="newGame"
+        android:text="New Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewComputerInput"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/btnSpock"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="spock"
+        android:text="Spock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnScissors" />
+
+    <Button
+        android:id="@+id/btnLizard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="lizard"
+        android:text="Lizard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpock"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
